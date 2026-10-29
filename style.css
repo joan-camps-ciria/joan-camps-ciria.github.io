@@ -191,6 +191,7 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 .hero__foto { justify-self: center; position: relative; }
 .hero__foto img {
   width: min(20rem, 70vw);
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
