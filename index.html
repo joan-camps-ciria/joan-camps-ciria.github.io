@@ -11,7 +11,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="es" href="https://joan-camps-ciria.github.io/">
   <link rel="alternate" hreflang="en" href="https://joan-camps-ciria.github.io/en/">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
   <script>
     // Aplica el tema guardado antes de pintar, para evitar parpadeos
     try {
@@ -154,7 +154,14 @@
   <!-- PROYECTOS -->
   <section id="proyectos" class="seccion contenedor">
     <h2><span class="acento">05.</span> Proyectos</h2>
-    <div class="rejilla rejilla--3">
+    <div class="rejilla rejilla--2">
+      <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Monitoring-K8s-Lab" target="_blank" rel="noopener">
+        <span class="proyecto__tipo">Laboratorio</span>
+        <h3>Monitoring K8s Lab</h3>
+        <p>Monitorización de servidores en Kubernetes con manifiestos escritos a mano: node-exporter como DaemonSet, Prometheus con descubrimiento automático vía API y reglas de alerta, y Grafana con datasource y panel aprovisionados como código.</p>
+        <ul class="chips chips--peque"><li>Prometheus</li><li>Grafana</li><li>node-exporter</li><li>PromQL</li><li>Kubernetes</li></ul>
+        <span class="proyecto__enlace">Ver en GitHub →</span>
+      </a>
       <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Kubernetes-Lab" target="_blank" rel="noopener">
         <span class="proyecto__tipo">Laboratorio</span>
         <h3>Kubernetes Lab</h3>
@@ -210,6 +217,6 @@
   <p>Hecho con ❤️ por Joan Camps · <span id="anio"></span></p>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

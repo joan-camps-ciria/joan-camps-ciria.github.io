@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=2">
+  <link rel="stylesheet" href="../style.css?v=3">
   <script>
     // Apply the saved theme before painting, to avoid flicker
     try {
@@ -154,7 +154,14 @@
   <!-- PROJECTS -->
   <section id="proyectos" class="seccion contenedor">
     <h2><span class="acento">05.</span> Projects</h2>
-    <div class="rejilla rejilla--3">
+    <div class="rejilla rejilla--2">
+      <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Monitoring-K8s-Lab" target="_blank" rel="noopener">
+        <span class="proyecto__tipo">Lab</span>
+        <h3>Monitoring K8s Lab</h3>
+        <p>Server monitoring on Kubernetes with hand-written manifests: node-exporter as a DaemonSet, Prometheus with automatic service discovery via the API and alerting rules, and Grafana with datasource and dashboard provisioned as code (in Spanish).</p>
+        <ul class="chips chips--peque"><li>Prometheus</li><li>Grafana</li><li>node-exporter</li><li>PromQL</li><li>Kubernetes</li></ul>
+        <span class="proyecto__enlace">View on GitHub →</span>
+      </a>
       <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Kubernetes-Lab" target="_blank" rel="noopener">
         <span class="proyecto__tipo">Lab</span>
         <h3>Kubernetes Lab</h3>
@@ -210,6 +217,6 @@
   <p>Made with ❤️ by Joan Camps · <span id="anio"></span></p>
 </footer>
 
-<script src="../script.js?v=2"></script>
+<script src="../script.js?v=3"></script>
 </body>
 </html>

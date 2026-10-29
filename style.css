@@ -246,6 +246,7 @@ h1, h2, h3 { line-height: 1.2; margin: 0; }
 
 .rejilla { display: grid; gap: 1.25rem; }
 .rejilla--3 { grid-template-columns: repeat(3, 1fr); }
+.rejilla--2 { grid-template-columns: repeat(2, 1fr); }
 
 .experiencia__cabecera {
   display: flex;
@@ -328,5 +329,5 @@ a.proyecto:hover { border-color: var(--acento); transform: translateY(-3px); tex
 }
 
 @media (max-width: 560px) {
-  .rejilla--3 { grid-template-columns: 1fr; }
+  .rejilla--3, .rejilla--2 { grid-template-columns: 1fr; }
 }
