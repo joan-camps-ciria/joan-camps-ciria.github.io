@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joan Camps Ciria · Linux Systems Engineer</title>
+  <meta name="description" content="Portfolio of Joan Camps Ciria, Linux Systems Engineer specialised in automation, IaC and containers.">
+  <link rel="alternate" hreflang="es" href="https://joan-camps-ciria.github.io/">
+  <link rel="alternate" hreflang="en" href="https://joan-camps-ciria.github.io/en/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    // Apply the saved theme before painting, to avoid flicker
+    try {
+      const tema = localStorage.getItem("tema");
+      if (tema) document.documentElement.dataset.theme = tema;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="contenedor nav__fila">
+    <a href="#inicio" class="nav__logo">joan@camps<span class="acento">:~$</span></a>
+    <nav class="nav__enlaces" aria-label="Sections">
+      <a href="#sobre-mi">About</a>
+      <a href="#experiencia">Experience</a>
+      <a href="#habilidades">Skills</a>
+      <a href="#proyectos">Projects</a>
+      <a href="#contacto">Contact</a>
+    </nav>
+    <a class="nav__idioma" href="../" hreflang="es" lang="es" title="Versión en español">ES</a>
+    <button class="nav__tema" id="boton-tema" type="button" aria-label="Toggle light/dark theme">◐</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="inicio" class="hero contenedor">
+    <div class="hero__texto">
+      <p class="etiqueta">Hi, I'm</p>
+      <h1>Joan Camps Ciria</h1>
+      <p class="hero__rol">Linux Systems Engineer</p>
+      <div class="terminal" aria-label="Decorative terminal">
+        <div class="terminal__barra"><span></span><span></span><span></span></div>
+        <pre class="terminal__cuerpo"><span class="prompt">$</span> <span id="escribiendo"></span><span class="cursor">▋</span></pre>
+      </div>
+      <div class="hero__botones">
+        <a class="boton boton--principal" href="#contacto">Get in touch</a>
+        <a class="boton" href="https://github.com/joan-camps-ciria" target="_blank" rel="noopener">GitHub</a>
+        <a class="boton" href="https://www.linkedin.com/in/joan-camps-ciria/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero__foto">
+      <img src="../img/foto.jpg" alt="Photo of Joan Camps Ciria" width="320" height="320">
+    </div>
+  </section>
+
+  <section class="cifras contenedor" aria-label="Highlights">
+    <div class="cifra"><strong>7+</strong><span>years in production</span></div>
+    <div class="cifra"><strong>RHCSA</strong><span>Red Hat certified</span></div>
+    <div class="cifra"><strong>IaC</strong><span>Ansible · AWX</span></div>
+    <div class="cifra"><strong>K8s</strong><span>OpenShift · Docker</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="sobre-mi" class="seccion contenedor">
+    <h2><span class="acento">01.</span> About me</h2>
+    <div class="sobre">
+      <p>Computer engineer specialised in <strong>Linux systems administration</strong>, automation and critical infrastructure architecture, with over 7 years of experience managing complex production environments for major retail clients.</p>
+      <p>Passionate about <strong>DevOps</strong> culture, automation through <strong>Infrastructure as Code</strong> and container orchestration. Proactive and always eager to learn and expand my knowledge in any technology.</p>
+      <ul class="datos">
+        <li><span>📍</span> Valencia, Spain</li>
+        <li><span>🗣️</span> Spanish and Valencian (native) · English (conversational)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experiencia" class="seccion contenedor">
+    <h2><span class="acento">02.</span> Experience</h2>
+    <article class="tarjeta experiencia">
+      <header class="experiencia__cabecera">
+        <div>
+          <h3>Linux Systems &amp; Hardware Engineer</h3>
+          <p class="experiencia__empresa">Sothis - Nunsys · Paterna, Valencia</p>
+        </div>
+        <span class="fecha">2019 – Present</span>
+      </header>
+      <p class="experiencia__resumen">Dedicated exclusively to the client <strong>Mercadona</strong>, managing the critical Linux-based infrastructure across its network of data centres, logistics hubs, offices and online-order fulfilment centres.</p>
+      <ul class="logros">
+        <li><strong>Administration &amp; security:</strong> hardening, performance tuning, incident management and security patching of critical Red Hat Enterprise Linux servers in high-availability environments.</li>
+        <li><strong>Automation &amp; IaC:</strong> design and automated rollout of large-scale configurations through Ansible playbooks and roles, with centralised execution and control via AWX workflows.</li>
+        <li><strong>Scripting &amp; version control:</strong> development and maintenance of internal tools and advanced Bash and Python scripts to optimise monitoring and automated system tasks, managed with Git/GitLab.</li>
+        <li><strong>Hardware management:</strong> full lifecycle of HPE and DELL servers: provisioning, firmware updates, centralised monitoring (HPE OneView) and incident handling.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="habilidades" class="seccion contenedor">
+    <h2><span class="acento">03.</span> Skills</h2>
+    <div class="rejilla rejilla--3">
+      <div class="tarjeta habilidad">
+        <h3>🐧 Linux Systems</h3>
+        <ul class="chips"><li>Red Hat Enterprise Linux</li><li>Ubuntu</li><li>Debian</li><li>Arch</li><li>Kali</li></ul>
+      </div>
+      <div class="tarjeta habilidad">
+        <h3>⚙️ Automation &amp; IaC</h3>
+        <ul class="chips"><li>Ansible</li><li>AWX</li><li>YAML</li><li>Jinja2</li><li>Bash scripting</li></ul>
+      </div>
+      <div class="tarjeta habilidad">
+        <h3>📦 DevOps</h3>
+        <ul class="chips"><li>Kubernetes</li><li>OpenShift</li><li>Docker</li><li>Podman</li></ul>
+      </div>
+      <div class="tarjeta habilidad">
+        <h3>🖥️ Hardware &amp; Infra</h3>
+        <ul class="chips"><li>HPE BladeSystem</li><li>OneView</li><li>iLO</li></ul>
+      </div>
+      <div class="tarjeta habilidad">
+        <h3>💻 Programming</h3>
+        <ul class="chips"><li>Bash</li><li>Python</li><li>C</li><li>C++</li><li>R</li></ul>
+      </div>
+      <div class="tarjeta habilidad">
+        <h3>📊 Observability</h3>
+        <ul class="chips"><li>Grafana</li><li>Prometheus</li><li>OMi</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certificaciones" class="seccion contenedor">
+    <h2><span class="acento">04.</span> Certifications</h2>
+    <div class="rejilla rejilla--3">
+      <div class="tarjeta certificado">
+        <span class="certificado__sigla">RHCSA</span>
+        <p>Red Hat Certified System Administrator</p>
+      </div>
+      <div class="tarjeta certificado">
+        <span class="certificado__sigla">ITIL® 4</span>
+        <p>Foundation Certificate in IT Service Management</p>
+      </div>
+      <div class="tarjeta certificado">
+        <span class="certificado__sigla">Cohesity</span>
+        <p>Certified Installation Professional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="proyectos" class="seccion contenedor">
+    <h2><span class="acento">05.</span> Projects</h2>
+    <div class="rejilla rejilla--3">
+      <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Kubernetes-Lab" target="_blank" rel="noopener">
+        <span class="proyecto__tipo">Lab</span>
+        <h3>Kubernetes Lab</h3>
+        <p>Guide to spin up a local Kubernetes cluster with minikube, plus a cheat sheet of essential kubectl commands (in Spanish).</p>
+        <ul class="chips chips--peque"><li>Kubernetes</li><li>minikube</li><li>kubectl</li></ul>
+        <span class="proyecto__enlace">View on GitHub →</span>
+      </a>
+      <a class="tarjeta proyecto" href="https://github.com/joan-camps-ciria/Proyectos-Laboratorio/tree/master/Python-App-K8s-Lab" target="_blank" rel="noopener">
+        <span class="proyecto__tipo">Lab</span>
+        <h3>Python App K8s Lab</h3>
+        <p>Task management REST API built with FastAPI, containerised and deployed on Kubernetes with a persistent volume, health probes and a Service (in Spanish).</p>
+        <ul class="chips chips--peque"><li>Python</li><li>FastAPI</li><li>Docker</li><li>Kubernetes</li></ul>
+        <span class="proyecto__enlace">View on GitHub →</span>
+      </a>
+      <div class="tarjeta proyecto">
+        <span class="proyecto__tipo">Bachelor's thesis · 2018 – 2019</span>
+        <h3>Failure prediction</h3>
+        <p>Change-point detection in time series to predict failures on the Ford Almussafes production line.</p>
+        <ul class="chips chips--peque"><li>R</li><li>Time series</li><li>Data analysis</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="educacion" class="seccion contenedor">
+    <h2><span class="acento">06.</span> Education</h2>
+    <article class="tarjeta experiencia">
+      <header class="experiencia__cabecera">
+        <div>
+          <h3>Bachelor's Degree in Computer Engineering (Information Systems)</h3>
+          <p class="experiencia__empresa">CEU Cardenal Herrera University · Valencia</p>
+        </div>
+        <span class="fecha">2011 – 2019</span>
+      </header>
+      <p class="experiencia__resumen">Focused on optimising business processes through the strategic use of technology.</p>
+    </article>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="seccion contenedor contacto">
+    <h2><span class="acento">07.</span> Contact</h2>
+    <p>Got a project, a job opportunity, or just want to talk about Linux and automation? Drop me a line.</p>
+    <p class="contacto__email"><a href="mailto:joancampsciria@gmail.com">joancampsciria@gmail.com</a></p>
+    <div class="hero__botones contacto__botones">
+      <a class="boton" href="https://www.linkedin.com/in/joan-camps-ciria/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="boton" href="https://github.com/joan-camps-ciria" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie contenedor">
+  <p>Made with ❤️ by Joan Camps · <span id="anio"></span></p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
